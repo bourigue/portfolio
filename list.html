@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-    <link href="style.css" rel="stylesheet" >
-    <link href="stylefontsicon.css" rel="stylesheet" >
+    <title>Rachid bourige</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="stylefontsicon.css" rel="stylesheet">
 
 
 
@@ -14,526 +15,580 @@
     <style>
         #hero {
             font-family: 'Fredoka One', cursive;
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
 
         }
-        .PRO{
-            background:linear-gradient(rgba(53, 204, 241,0.8),rgba(46, 10, 248,0.8));
+
+        .PRO {
+            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
         }
-        section{
+
+        section {
             position: relative;
             z-index: 2;
         }
-        .bg-cover{
+
+        .bg-cover {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
+                     }
 
-        }
-        .overlay{
+        .overlay {
             position: absolute;
-            top:0px;
-            left:0px;
+            top: 0px;
+            left: 0px;
             width: 100%;
             height: 100%;
             z-index: -1;
-            background:linear-gradient(rgba(53, 204, 241,0.8),rgba(46, 10, 248,0.8));
+            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
+        }
 
+        .navbar {
+            box-shadow: 1px 1px 30px rgba(32, 35, 36, 0.5);
         }
-        .navbar{
-            box-shadow:1px 1px 30px rgba(32, 35, 36, 0.5);
-        }
+
         p{
-            font-weight:300;
-            font-size:16px;
-            color:rgb(255, 255, 255);
+            font-weight: 300;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
         }
-        .hero-section{
-            min-height:100vh;
+
+        .hero-section {
+            min-height: 100vh;
             display: flex;
-            justify-content:center ;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg-cover {
+
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
             align-items: center;
 
 
         }
-        .bg-cover{
 
-            min-height:100vh;
-            display: flex;
-            justify-content:center ;
-            align-items: center;
-
-
-        }
-        .btn{
-            background:linear-gradient(to left,  rgb(53, 204, 241),rgb(46, 10, 248));
-            border-radius:40px; ;
+        .btn {
+            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            border-radius: 40px;
+            
             font-size: 30px;
-            border:none;
+            border: none;
             margin-top: 60px;
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
 
         }
-        .btnn{
-            background:linear-gradient(to left,  rgb(53, 204, 241),rgb(46, 10, 248));
-            border-radius:40px; ;
-            font-size:20px;
-            border:none;
+
+        .btnn {
+            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            border-radius: 40px;
+            ;
+            font-size: 20px;
+            border: none;
             padding: 10px;
-            margin-top:2px;
-            color:rgb(255, 255, 255);
+            margin-top: 2px;
+            color: rgb(255, 255, 255);
             text-decoration: none;
-
         }
-        .btn:hover{
+
+        .btn:hover {
             transition: all 0.3s ease;
             transform: translateY(-6px);
-
-
         }
+
         .btnabout{
-            background:linear-gradient(to left,  rgb(53, 204, 241),rgb(46, 10, 248));
-            border-radius:40px; ;
+            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            border-radius: 40px;
+            ;
             font-size: 30px;
-            border:none;
+            border: none;
             text-align: center;
 
-            padding-top:13px;
-            color:rgb(255, 255, 255);
-            width:80px;
-            height:80px ;
+            padding-top: 13px;
+            color: rgb(255, 255, 255);
+            width: 80px;
+            height: 80px;
         }
-        .btnabout:hover{
+
+        .btnabout:hover {
             transition: all 0.3s ease-in-out;
             transform: scale(130%);
         }
-        .devider{
-            width:100px;
+
+        .devider {
+            width: 100px;
             height: 5px;
-            background-image: linear-gradient(to left,  rgb(53, 204, 241),rgb(46, 10, 248));
-            margin:5px  auto;
-        }
-        .deviderrevewi{
-            width:80%;
-            height: 2px;
-            background-image: linear-gradient(to left,  rgba(99, 114, 117,0.2),rgb(149, 148, 155,0.2));
-            margin:5px  auto;
-        }
-        .devider:hover{
-            transition: all 0.3s ease;
-            width:170px;
+            background-image: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            margin: 5px auto;
         }
 
-        .servic-img{
+        .deviderrevewi {
+            width: 80%;
+            height: 2px;
+            background-image: linear-gradient(to left, rgba(99, 114, 117, 0.2), rgb(149, 148, 155, 0.2));
+            margin: 5px auto;
+        }
+
+        .devider:hover {
+            transition: all 0.3s ease;
+            width: 170px;
+        }
+
+        .servic-img {
             width: 100%;
-             }
-        .icon-image{
-            background-image: linear-gradient(to left,  rgb(53, 204, 241),rgb(46, 10, 248));
+        }
+
+        .icon-image {
+            background-image: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
             width: 90px;
             height: 90px;
-            border-radius:50%;
-            padding:8px ;
-            margin-top:-40px;
+            border-radius: 50%;
+            padding: 8px;
+            margin-top: -40px;
         }
-        .navbar-expand-lg .navbar-nav .nav-link:hover{
 
-            background: -webkit-linear-gradient(rgb(53, 204, 241),rgb(46, 10, 248));
+        .navbar-expand-lg .navbar-nav .nav-link:hover {
+            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .about-section{
-            min-height:50vh;
+
+        .about-section {
+            min-height: 50vh;
             display: flex;
-            justify-content:center ;
+            justify-content: center;
             align-items: center;
         }
+
         .icon-features {
-            background: -webkit-linear-gradient(rgb(53, 204, 241),rgb(46, 10, 248));
-            -webkit-background-clip:text;
+            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
         }
-        .features i{
 
-
-            background: -webkit-linear-gradient(rgb(53, 204, 241),rgb(46, 10, 248));
-            -webkit-background-clip:text;
+        .features i {
+            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 60px;
 
         }
-        #commentaires  .start i{
 
-            background: -webkit-linear-gradient(rgb(247, 190, 4),rgb(241, 200, 13));
-            -webkit-background-clip:text;
+        #commentaires .start i {
+
+            background: -webkit-linear-gradient(rgb(247, 190, 4), rgb(241, 200, 13));
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 20px;
 
         }
-        .person-img{
+
+        .person-img {
             width: 90px;
             height: 90px;
             border-radius: 50%;
         }
-        #nomprofil{
-            padding-left:40px;
+
+        #nomprofil {
+            padding-left: 40px;
 
 
         }
 
-        .form-control::placeholder{
+        .form-control::placeholder {
             color: #fff;
         }
-        .form-control:focus, .form-control {
+
+        .form-control:focus,
+        .form-control {
             color: #fff;
             border-color: rgba(255, 255, 255, 0.99);
             outline: 0;
             box-shadow: none;
         }
 
-        .borderrow {
+        .borderrow {}
 
-        }
-        .borderrow:hover{
+        .borderrow:hover {
             box-shadow: -5px -5px 30px 5px rgb(53, 204, 241), 5px 5px 30px 5px rgb(46, 10, 248);
-                        }
+        }
 
+
+        .cardSkills {
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        .cardSkills::before {
+            content: '';
+            position: absolute;
+            bottom: -100%;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
+            transition: 0.5s;
+        }
+
+        .cardSkills:hover::before {
+            transform: translate(0px, -100%);
+        }
     </style>
     <!--animation css and js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--bootsrap css and js-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-   <!--fontaweosme-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!--fontaweosme-->
     <script src="https://kit.fontawesome.com/ec2fd5b7d5.js" crossorigin="anonymous"></script>
 </head>
 
-<body >
+<body>
 
 
-<!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-light " data-aos="fade-down">
-    <div class="container">
-        <a class="navbar-brand" href="#">RBH</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-                <a class="nav-link" href="#SERVICES">Skills</a>
-                <a class="nav-link" href="#about">AbOUT</a>
-                <a class="nav-link"  href="#Features">SidePoject</a>
-                <a class="nav-link"  href="#REVIEWS">Review</a>
-                <a class="nav-link"  href="#">Blog</a>
-                <a class="nav-link"  href="#">Contact</a>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light " data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">RBH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link" href="#SERVICES">Skills</a>
+                    <a class="nav-link" href="#about">AbOUT</a>
+                    <a class="nav-link" href="#Features">SidePoject</a>
+                    <a class="nav-link" href="#REVIEWS">Review</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Contact</a>
 
 
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!--hom-->
-<section id="hom" class="bg-cover hero-section  " style="background-image:url(background.jpg);">
-    <div class="overlay"></div>
-    <div class="container text-center ">
-        <div class="row gx-5 gy-5 align-items-center">
-            <div class="col-md-6 " >
-                <h1 id="hero" class="display-4" data-aos="zoom-in-left" >I'm Bourigue Rachid</h1>
-                <p class="my-3 " >
-                    Software engineer and Master's degree student specialised in Compture Systems Engineering, and lover of the open-source movement philosophy.
-                    I am always doing that which I cannot do in order that I may learn how to do it, and I believe in sharing knowledge.
-                    I think it's essential a </br>
-                    +ways to keep professional and surround yourself with good people, work hard, and be nice to everyone.
-                </p>
-
-                <button type="button" class="btn btn-primary "> <i class="fa-solid fa-play"></i></i>  GET STARTED  </button>
-                <button type="button" class="btn btn-primary ">  <i class="fa-brands fa-1x fa-github-square"></i>  GET STARTED  </button>
-
-            </div>
-            <div class="col-md-6  text-center"  >
-
-
-                <img class="card-img" src="rachid3.png" style="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--services-->
-<section id="SERVICES" >
-    <div class="container text-center my-5  ">
-
-        <div class="row">
-            <div class="col-12">
-                <h1 id="heroservies" class="text-dark" data-aos="zoom-in">Tech Stack<br/>
-                    <div class="devider "></div>
-                    <p class=" text-dark my-4">
-                        it the first linding page for me because it was the first object any thinged for<br/>
-                        for me to lerarning html and css and angular and java and python devloping <br/>
-                        than all what we need for devloping any thingor me to lerarning html<br/>
-                        and css and angular and java and python than all what we ne
+    <!--hom-->
+    <section id="hom" class="bg-cover hero-section  " style="background-image:url(background.jpg);">
+        <div class="overlay"></div>
+        <div class="container text-center ">
+            <div class="row gx-5 gy-5 align-items-center">
+                <div class="col-md-6 ">
+                    <h1 id="hero" class="display-4" data-aos="zoom-in-left">I'm Bourigue Rachid</h1>
+                    <p class="my-3 ">
+                        Software engineer and Master's degree student specialised in Compture Systems Engineering, and
+                        lover of the open-source movement philosophy.
+                        I am always doing that which I cannot do in order that I may learn how to do it, and I believe
+                        in sharing knowledge.
+                        I think it's essential a </br>
+                        +ways to keep professional and surround yourself with good people, work hard, and be nice to
+                        everyone.
                     </p>
 
+                    <button type="button" class="btn btn-primary "> <i class="fa-solid fa-play"></i></i> GET STARTED
+                    </button>
+                    <button type="button" class="btn btn-primary "> <i class="fa-brands fa-1x fa-github-square"></i> GET
+                        STARTED </button>
+
+                </div>
+                <div class="col-md-6  text-center">
+
+
+                    <img class="card-img" src="rachid3.png" style="">
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="row mt-5 align-items-center justify-content-between">
+    <!--services-->
+    <section id="SERVICES">
+        <div class="container text-center my-5  ">
 
-         
-            <!-- bootstrap -->
-            <div class="col-6 col-md-3  mb-3  rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/bootstrap.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">bootstrap<br/>
-                </div>
-            </div>
-            <!-- Laravel -->
-            <div class="col-6 col-md-3  mb-3 rounded"  data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/laravel.png" style="width:50%;">
-                    </div>
-                    <div class="icon">
-                        <h3  class="text-dark mt-1">Laravel<br/>
-                    </div>
-                </div>
-            </div>
-            <!--firebase-->
-            <div class="col-6 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/firebase.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">firebase<br/>
-                </div>
-            </div>
-            <!--Flutter-->
-            <div class="col-6 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/flutter.png" style="width:50%;">
-                    </div>
-
-                    <h3  class="text-dark mt-1">Flutter<br/>
-
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="heroservies" class="text-dark" data-aos="zoom-in">Tech Stack<br />
+                        <div class="devider "></div>
+                        <p class=" text-dark my-4">
+                            it the first linding page for me because it was the first object any thinged for<br />
+                            for me to lerarning html and css and angular and java and python devloping <br />
+                            than all what we need for devloping any thingor me to lerarning html<br />
+                            and css and angular and java and python than all what we ne
+                        </p>
 
                 </div>
             </div>
-            <!--mysql-->
-            <div class="col-6 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/mysql.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">mysql<br/>
-                </div>
-            </div>
-            <!-- oracle-->
-            <div class="col-6 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/oracle.png" style="width:50%;">
-                    </div>
 
-                    <h3  class="text-dark mt-1">firebase<br/>
+            <div class="row  align-items-center justify-content-between">
 
 
-                </div>
-            </div>
-            <!--git-->
-            <div class="col-6 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/git.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">git<br/>
-                </div>
-            </div>
-            <!--angular-->
-            <div class="col-3 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/angular.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">angular<br/>
-                </div>
-            </div>
-            <!--spring -->
-            <div class="col-3 col-md-3  mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="servic ">
-                    <div class="card-body servic-img " >
-                        <img src="folder/springboot.png" style="width:50%;">
-                    </div>
-                    <h3  class="text-dark mt-1">spring boot<br/>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-<!--Project -->
- <section id="" >
-    <div class="container text-center   ">
-
-        <div class="row ">
-            <div class="col-12">
-                <h1 id="heroservies" class="mt-4 mb-lg-4 text-dark">Our Features</h1><br/>
-                    <div class="devider "></div>
-                    <p class=" text-dark my-4">
-                        it the first linding page for me because it was the first object any thinged for<br/>
-                        for me to lerarning html and css and angular and java and python devloping <br/>
-
-                    </p>
-
-               </div>
-          </div>
-
-
-      </div>
-     <div class="container  " >
-                 <div  class="row  PRO p-2  borderrow rounded mb-2">
-                   <div class="col-md-6 d-flex align-items-center">
-                            <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
+                <!-- bootstrap -->
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/bootstrap.png" style="width:50%;height:50%;">
                         </div>
-                        <div class="col-md-6 d-flex align-items-center" >
-                            <div class="row p-3 bg-warning">
-                                <div class="col-md-12  rounded ">
-                                <div class="card-body">
-                                <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for Taxi Geolocation</span></h5>
+                        <h3 class="text-dark mt-1">bootstrap<br />
+                    </div>
+                </div>
+                <!-- Laravel -->
+                <div class="col-6 col-md-3 cardSkills shadow mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class=""></div>
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/laravel.png" style="width:50%;height:50%;">
+                        </div>
+                        <div class="icon">
+                            <h3 class="text-dark mt-1">Laravel<br />
+                        </div>
+                    </div>
+                </div>
+                <!--firebase-->
+                <div class="col-6 col-md-3 cardSkills mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/firebase.png" style="width:50%;">
+                        </div>
+                        <h3 class="text-dark mt-1">firebase<br />
+                    </div>
+                </div>
+                <!--Flutter-->
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/flutter.png" style="width:50%;">
+                        </div>
+
+                        <h3 class="text-dark mt-1">Flutter<br />
+
+
+                    </div>
+                </div>
+                <!--mysql-->
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/mysql.png" style="width:50%;">
+                        </div>
+                        <h3 class="text-dark mt-1">mysql<br />
+                    </div>
+                </div>
+                <!--git-->
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/git.png" style="width:50%;">
+                        </div>
+                        <h3 class="text-dark mt-1">git<br />
+                    </div>
+                </div>
+                <!--angular-->
+                <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/angular.png" style="width:50%;">
+                        </div>
+                        <h3 class="text-dark mt-1">angular<br />
+                    </div>
+                </div>
+                <!--spring -->
+                <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="servic ">
+                        <div class="card-body servic-img ">
+                            <img src="folder/springboot.png" style="width:50%;">
+                        </div>
+                        <h3 class="text-dark mt-1">spring boot<br />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Project -->
+    <section id="">
+        <div class="container text-center   ">
+
+            <div class="row ">
+                <div class="col-12">
+                    <h1 id="heroservies" class="mt-4 mb-lg-4 text-dark">Our Features</h1><br />
+                    <div class="devider "></div>
+                    <p class=" text-dark my-4">
+                        it the first linding page for me because it was the first object any thinged for<br />
+                        for me to lerarning html and css and angular and java and python devloping <br />
+
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container  ">
+            <div class="row  PRO p-2  borderrow rounded mb-2">
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="row p-3 bg-warning">
+                        <div class="col-md-12  rounded ">
+                            <div class="card-body">
+                                <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for
+                                        Taxi Geolocation</span></h5>
 
                                 <p class="card-text">
 
 
 
-                                    This web application makes it possible to develop and improve the transport offer and facilitate access to the
-                                    means of urban transport in a city having provided a communication interface between passengers and taxi drivers,
-                                    thus, to improve the work opportunities for drivers and to make deliveries to customers.
-                                    It is therefore a positive website in both directions, customer sense and driver sense.</p>
-                                  </div>
-                                    </div>
-
-                                <div class="col-12 m-1 ">
-                                    <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
-                                    <div class="d-flex bd-highlight align-items-center">
-                                        <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
-                                        <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
-                                        <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
-                                        <div class="ms-auto bd-highlight">
-                                            <button type="button" class="btn btn-primary ">  <i class="fa-brands fa-1x fa-github-square"></i>    Github</button>
-                                            <a  href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button type="button" class="btn btn-secondary"><i class="fa-solid fa-circle-play"></i>   Video</button></a>
-
-
-                                        </div>
-                                    </div>
-
-                       </div>
-
-
-                           </div>
-                            </div>
-
-                      </div>
-                  <div class="row  PRO p-2  borderrow rounded mb-5">
-                      <div class="col-md-6 d-flex align-items-center">
-                            <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
-                     </div>
-                      <div class="col-md-6 d-flex align-items-center" >
-                     <div class="row p-3 bg-warning">
-                    <div class="col-md-12  rounded ">
-                        <div class="card-body">
-                            <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for Taxi Geolocation</span></h5>
-
-                            <p class="card-text">
-                                This web application makes it possible to develop and improve the transport offer and facilitate access to the
-                                means of urban transport in a city having provided a communication interface between passengers and taxi drivers,
-                                thus, to improve the work opportunities for drivers and to make deliveries to customers.
-                                It is therefore a positive website in both directions, customer sense and driver sense.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 m-1 ">
-                        <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
-                        <div class="d-flex bd-highlight align-items-center">
-                            <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
-                            <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
-                            <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
-                            <div class="ms-auto bd-highlight">
-                                <button type="button" class="btn btn-primary ">  <i class="fa-brands fa-1x fa-github-square"></i>    Github</button>
-                                <a  href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button type="button" class="btn btn-secondary"><i class="fa-solid fa-circle-play"></i>   Video</button></a>
-
-
+                                    This web application makes it possible to develop and improve the transport offer
+                                    and facilitate access to the
+                                    means of urban transport in a city having provided a communication interface between
+                                    passengers and taxi drivers,
+                                    thus, to improve the work opportunities for drivers and to make deliveries to
+                                    customers.
+                                    It is therefore a positive website in both directions, customer sense and driver
+                                    sense.</p>
                             </div>
                         </div>
 
+                        <div class="col-12 m-1 ">
+                            <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
+                            <div class="d-flex bd-highlight align-items-center">
+                                <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
+                                <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
+                                <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
+                                <div class="ms-auto bd-highlight">
+                                    <button type="button" class="btn btn-primary "> <i
+                                            class="fa-brands fa-1x fa-github-square"></i> Github</button>
+                                    <a href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button
+                                            type="button" class="btn btn-secondary"><i
+                                                class="fa-solid fa-circle-play"></i> Video</button></a>
 
+
+                                </div>
+                            </div>
+
+                        </div>
 
 
                     </div>
+                </div>
 
+            </div>
+            <div class="row  PRO p-2  borderrow rounded mb-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="row p-3 bg-warning">
+                        <div class="col-md-12  rounded ">
+                            <div class="card-body">
+                                <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for
+                                        Taxi Geolocation</span></h5>
+
+                                <p class="card-text">
+                                    This web application makes it possible to develop and improve the transport offer
+                                    and facilitate access to the
+                                    means of urban transport in a city having provided a communication interface between
+                                    passengers and taxi drivers,
+                                    thus, to improve the work opportunities for drivers and to make deliveries to
+                                    customers.
+                                    It is therefore a positive website in both directions, customer sense and driver
+                                    sense.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 m-1 ">
+                            <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
+                            <div class="d-flex bd-highlight align-items-center">
+                                <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
+                                <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
+                                <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
+                                <div class="ms-auto bd-highlight">
+                                    <button type="button" class="btn btn-primary "> <i
+                                            class="fa-brands fa-1x fa-github-square"></i> Github</button>
+                                    <a href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button
+                                            type="button" class="btn btn-secondary"><i
+                                                class="fa-solid fa-circle-play"></i> Video</button></a>
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--Contact-->
+    <section id="register " class="bg-cover  " style="background-image:url(vasily-koloda-8CqDvPuo_kI-unsplash.jpg);">
+        <div class="overlay"></div>
+
+        <div class="row">
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 id="heroservies" class="text-white" data-aos="zoom-in">Singin <br />
+                        <div class="devider "></div>
+                        <p class=" text-white my-4">
+                            it the first linding page for me because it was the first object any thinged for<br />
+                            for me to lerarning html and css and angular and java and python devloping <br />
+
+                        </p>
 
                 </div>
             </div>
 
-        </div>
+
+
+            <div class="col-md-8  mx-auto">
+                <form class="row gy-3 ">
+                    <div class="form-group col-md-6">
+                        <input type="text" placeholder="full name" class="form-control  "
+                            style="background: transparent;">
+                    </div>
+                    <div class=" col-md-6">
+                        <input type="text" placeholder="address mail" class="form-control "
+                            style="background: transparent;">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" placeholder="Telephone" class="form-control "
+                            style="background: transparent;">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" placeholder="message" aria-placeholder="hhhhhhhh" cols="100"
+                            rows="5" style="background: transparent;"></textarea>
+                    </div>
+                    <div class="text-center"><button class="btnn">singin</button></div>
+                </form>
             </div>
-   </section>
-
-
-
-
-<!--Contact-->
-<section id="register " class="bg-cover  " style="background-image:url(vasily-koloda-8CqDvPuo_kI-unsplash.jpg);">
-    <div class="overlay"></div>
-
-    <div class="row" >
-
-        <div class="row text-center">
-            <div class="col-12">
-                <h1 id="heroservies" class="text-white" data-aos="zoom-in">Singin <br/>
-                    <div class="devider "></div>
-                    <p class=" text-white my-4">
-                        it the first linding page for me because it was the first object any thinged for<br/>
-                        for me to lerarning html and css and angular and java and python devloping <br/>
-
-                    </p>
-
-            </div>
         </div>
 
-
-
-        <div class="col-md-8  mx-auto">
-            <form class="row gy-3 ">
-                <div class="form-group col-md-6">
-                    <input type="text" placeholder="full name" class="form-control  " style="background: transparent;" >
-                </div>
-                <div class=" col-md-6">
-                    <input type="text" placeholder="address mail" class="form-control " style="background: transparent;" >
-                </div> <div class="form-group col-md-12">
-                <input type="text" placeholder="Telephone" class="form-control " style="background: transparent;" >
-            </div> <div class="form-group col-md-12">
-                <textarea  class="form-control" placeholder="message"  aria-placeholder="hhhhhhhh"  cols="100" rows="5"style="background: transparent;" ></textarea>
-            </div>
-                <div class="text-center"><button  class="btnn">singin</button></div>
-            </form>
-        </div>
-    </div>
-
-</section>
-<div class="p-lg-4 h-25 bg-primary"> copyrinting 2015-2020  by </div>
+    </section>
+    <div class="p-lg-4 h-25 bg-primary"> copyrinting 2015-2020 by </div>
 
 
 
@@ -545,9 +600,10 @@
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
