@@ -13,6 +13,13 @@
 
 
     <style>
+        :root{
+           --colorPremier:#027ca0;
+           --colorSecondaire:#1219d5;
+            }
+            *{
+                
+            }
         #hero {
             font-family: 'Fredoka One', cursive;
             color: rgb(255, 255, 255);
@@ -20,7 +27,7 @@
         }
 
         .PRO {
-            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
+            background: linear-gradient(var(--colorPremier),var(--colorSecondaire));
         }
 
         section {
@@ -42,7 +49,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
+            background: linear-gradient(var(--colorPremier), var(--colorSecondaire));
         }
 
         .navbar {
@@ -73,7 +80,7 @@
         }
 
         .btn {
-            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            background: linear-gradient(to left,var(--colorPremier), var(--colorSecondaire));
             border-radius: 40px;
             
             font-size: 30px;
@@ -84,7 +91,7 @@
         }
 
         .btnn {
-            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
             border-radius: 40px;
             ;
             font-size: 20px;
@@ -101,7 +108,7 @@
         }
 
         .btnabout{
-            background: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
             border-radius: 40px;
             ;
             font-size: 30px;
@@ -122,14 +129,14 @@
         .devider {
             width: 100px;
             height: 5px;
-            background-image: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
+            background-image: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
             margin: 5px auto;
         }
 
         .deviderrevewi {
             width: 80%;
             height: 2px;
-            background-image: linear-gradient(to left, rgba(99, 114, 117, 0.2), rgb(149, 148, 155, 0.2));
+            background-image: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
             margin: 5px auto;
         }
 
@@ -138,66 +145,20 @@
             width: 170px;
         }
 
-        .servic-img {
-            width: 100%;
-        }
+         #sectionProject{
+        background-color: rgb(92, 127, 193);
 
-        .icon-image {
-            background-image: linear-gradient(to left, rgb(53, 204, 241), rgb(46, 10, 248));
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            padding: 8px;
-            margin-top: -40px;
-        }
+         }
 
-        .navbar-expand-lg .navbar-nav .nav-link:hover {
-            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+         #sectionProject .div .div{
+            background-color: rgb(92, 127, 193);
+         }
 
-        .about-section {
-            min-height: 50vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      
 
-        .icon-features {
-            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .features i {
-            background: -webkit-linear-gradient(rgb(53, 204, 241), rgb(46, 10, 248));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 60px;
-
-        }
-
-        #commentaires .start i {
-
-            background: -webkit-linear-gradient(rgb(247, 190, 4), rgb(241, 200, 13));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 20px;
-
-        }
-
-        .person-img {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-        }
-
-        #nomprofil {
-            padding-left: 40px;
-
-
-        }
+     
+     
+    
 
         .form-control::placeholder {
             color: #fff;
@@ -211,10 +172,10 @@
             box-shadow: none;
         }
 
-        .borderrow {}
+      
 
-        .borderrow:hover {
-            box-shadow: -5px -5px 30px 5px rgb(53, 204, 241), 5px 5px 30px 5px rgb(46, 10, 248);
+        .borderrow{
+            border: 4px solid blue;
         }
 
 
@@ -232,13 +193,30 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(rgba(53, 204, 241, 0.8), rgba(46, 10, 248, 0.8));
+            background: linear-gradient(var(--colorPremier),var(--colorSecondaire));
             transition: 0.5s;
         }
 
         .cardSkills:hover::before {
             transform: translate(0px, -100%);
         }
+        .cardSkills:hover{
+            transform: scale(0.5, 0.5);
+        }
+       
+.img-project  {
+  height: 100%;
+  width: 100%;
+  object-fit:cover ;
+  position: relative;
+  }
+#image-skills{
+  width: 170px;
+  height: 170px;
+  text-align: center;
+
+
+}
     </style>
     <!--animation css and js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -337,7 +315,7 @@
                 <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/bootstrap.png" style="width:50%;height:50%;">
+                            <img id="image-skills" src="folder/bootstrap.png">
                         </div>
                         <h3 class="text-dark mt-1">bootstrap<br />
                     </div>
@@ -347,7 +325,7 @@
                     <div class=""></div>
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/laravel.png" style="width:50%;height:50%;">
+                            <img src="folder/laravel.png" id="image-skills">
                         </div>
                         <div class="icon">
                             <h3 class="text-dark mt-1">Laravel<br />
@@ -358,7 +336,7 @@
                 <div class="col-6 col-md-3 cardSkills mb-3 rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/firebase.png" style="width:50%;">
+                            <img src="folder/firebase.png" id="image-skills">
                         </div>
                         <h3 class="text-dark mt-1">firebase<br />
                     </div>
@@ -367,7 +345,7 @@
                 <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/flutter.png" style="width:50%;">
+                            <img src="folder/flutter.png" id="image-skills">
                         </div>
 
                         <h3 class="text-dark mt-1">Flutter<br />
@@ -379,7 +357,7 @@
                 <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/mysql.png" style="width:50%;">
+                            <img src="folder/mysql.png" id="image-skills">
                         </div>
                         <h3 class="text-dark mt-1">mysql<br />
                     </div>
@@ -388,7 +366,7 @@
                 <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/git.png" style="width:50%;">
+                            <img src="folder/git.png" id="image-skills">
                         </div>
                         <h3 class="text-dark mt-1">git<br />
                     </div>
@@ -397,7 +375,7 @@
                 <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/angular.png" style="width:50%;">
+                            <img src="folder/angular.png" id="image-skills">
                         </div>
                         <h3 class="text-dark mt-1">angular<br />
                     </div>
@@ -406,7 +384,7 @@
                 <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
-                            <img src="folder/springboot.png" style="width:50%;">
+                            <img src="folder/springboot.png" id="image-skills">
                         </div>
                         <h3 class="text-dark mt-1">spring boot<br />
                     </div>
@@ -419,9 +397,8 @@
     </section>
 
     <!--Project -->
-    <section id="">
+    <section id="sectionProject">
         <div class="container text-center   ">
-
             <div class="row ">
                 <div class="col-12">
                     <h1 id="heroservies" class="mt-4 mb-lg-4 text-dark">Our Features</h1><br />
@@ -434,25 +411,18 @@
 
                 </div>
             </div>
-
-
         </div>
-        <div class="container  ">
-            <div class="row  PRO p-2  borderrow rounded mb-2">
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
+        <div class="container ">
+            <div class="row  PRO  borderrow rounded justify-content-between">
+                <div class="col-md-5 ">
+                    <img class="img-project " src="folder/project.jpg">
                 </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="row p-3 bg-warning">
+                <div class="col-md-7 ">
+                    <div class="row ">
                         <div class="col-md-12  rounded ">
                             <div class="card-body">
-                                <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for
-                                        Taxi Geolocation</span></h5>
-
-                                <p class="card-text">
-
-
-
+                                <h2 class="text-dark fs-5 fw-bold"><span class="rounded-pill ">Web application forTaxi Geolocation</span></h5>
+                                <p class="card-text text-dark fs-5 fw-semibold">
                                     This web application makes it possible to develop and improve the transport offer
                                     and facilitate access to the
                                     means of urban transport in a city having provided a communication interface between
@@ -464,21 +434,17 @@
                             </div>
                         </div>
 
-                        <div class="col-12 m-1 ">
-                            <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
+                        <div class="col-12  ">
+                            <h5 class="card-body"><span class="bg-info rounded-pill  text-bg-info">Tools</span></h5>
                             <div class="d-flex bd-highlight align-items-center">
-                                <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
-                                <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
-                                <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
+                              <p class="card-text text-dark fs-5 fw-semibold"></>GoogleMaps,</p>
                                 <div class="ms-auto bd-highlight">
                                     <button type="button" class="btn btn-primary "> <i
                                             class="fa-brands fa-1x fa-github-square"></i> Github</button>
                                     <a href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button
                                             type="button" class="btn btn-secondary"><i
                                                 class="fa-solid fa-circle-play"></i> Video</button></a>
-
-
-                                </div>
+                                             </div>
                             </div>
 
                         </div>
@@ -488,55 +454,7 @@
                 </div>
 
             </div>
-            <div class="row  PRO p-2  borderrow rounded mb-5">
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="folder/pagechofor.png" class="img-fluid rounded" alt="...">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="row p-3 bg-warning">
-                        <div class="col-md-12  rounded ">
-                            <div class="card-body">
-                                <h5 class=""><span class="bg-info rounded-pill p-1 text-bg-info">Web application for
-                                        Taxi Geolocation</span></h5>
-
-                                <p class="card-text">
-                                    This web application makes it possible to develop and improve the transport offer
-                                    and facilitate access to the
-                                    means of urban transport in a city having provided a communication interface between
-                                    passengers and taxi drivers,
-                                    thus, to improve the work opportunities for drivers and to make deliveries to
-                                    customers.
-                                    It is therefore a positive website in both directions, customer sense and driver
-                                    sense.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 m-1 ">
-                            <h5 class="card-body"><span class="bg-info rounded-pill p-1 text-bg-info">Tools</span></h5>
-                            <div class="d-flex bd-highlight align-items-center">
-                                <img class="m-1 bd-highlight" src="folder/maps.png" style="width:60px;height:60px;">
-                                <img class="m-1 bd-highlight" src="folder/django.png" style="width:60px;height:60px;">
-                                <img class="m-1 bd-highlight" src="folder/python.png" style="width:60px;height:60px;">
-                                <div class="ms-auto bd-highlight">
-                                    <button type="button" class="btn btn-primary "> <i
-                                            class="fa-brands fa-1x fa-github-square"></i> Github</button>
-                                    <a href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button
-                                            type="button" class="btn btn-secondary"><i
-                                                class="fa-solid fa-circle-play"></i> Video</button></a>
-
-
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
+           
         </div>
     </section>
 
