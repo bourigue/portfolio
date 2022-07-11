@@ -14,11 +14,17 @@
 
     <style>
         :root{
-           --colorPremier:#027ca0;
-           --colorSecondaire:#1219d5;
+           --colorPremier:#131f5e;
+           --colorSecondaire:#444683;
+           --colorBtnProject:rgb(3, 255, 234);
+
+
+
             }
             *{
-                
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
             }
         #hero {
             font-family: 'Fredoka One', cursive;
@@ -49,7 +55,8 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(var(--colorPremier), var(--colorSecondaire));
+            background: linear-gradient(var(--colorPremier), var(--colorPremier));
+            
         }
 
         .navbar {
@@ -129,19 +136,19 @@
         .devider {
             width: 100px;
             height: 5px;
-            background-image: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
+            background-image: linear-gradient(to left, var(--colorPremier), var(--colorPremier));
             margin: 5px auto;
         }
 .deviderTitleProjet{
-    width:100%;
+            width:200px;
             height: 5px;
-            background-image: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
+            background-image: linear-gradient(to left, var(--colorBtnProject), var(--colorBtnProject));
             
         }
         .deviderrevewi {
             width: 80%;
             height: 2px;
-            background-image: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
+            background-image: linear-gradient(to left, var(--colorPremier), var(--colorPremier));
             margin: 5px auto;
         }
 
@@ -154,7 +161,7 @@
             width:100%;
         }
          #sectionProject{
-        background-color: rgb(92, 127, 193);
+        background-color: var(--colorPremier);
 
          }
 
@@ -177,15 +184,17 @@
       
 
         .borderrow{
-            border: 4px solid blue;
+             border: 4px solid var(--colorBtnProject); 
         }
-
+       .borderrow:hover{
+            box-shadow: 0 0 35px var(--colorBtnProject);
+            box-sizing: border-box;
+       }
 
         .cardSkills {
             position: relative;
             overflow: hidden;
-            
-        }
+             }
 
         .cardSkills::before {
             content: '';
@@ -195,7 +204,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(var(--colorPremier),var(--colorSecondaire));
+            background-color:rgb(3, 255, 234);
             transition: 0.5s;
         }
 
@@ -213,14 +222,52 @@
   text-align: center;
 }
 #imagecarousel2{
-  height: 250px;
-  width: 400%;
+  
+  height: 300px;
+  width: 100%;
   object-fit:cover ;
   position: relative;
 }
 .cardProjet{
-    background-color:#9fe9ddb1;
+    background-color:#154975;
 }
+
+
+.btndes{
+    position: relative;
+    background-color: rgb(254, 254, 254);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 0px;
+    font-weight: 600;
+    font-size:x-large;
+    padding: 10px;
+
+   
+}
+.btndes:hover{
+color: var(--colorBtnProject);
+background-color:var(--colorBtnProject);
+box-shadow: 0 0 35px var(--colorBtnProject);
+letter-spacing: 0.5rem;
+text-decoration: none;
+transition: 0.5s;
+border: none;
+
+}
+.btndes:before{
+    content:  '';
+    position: absolute;
+    inset:2px;
+    color:var(--colorBtnProject);
+    background-color: var(--colorPremier);
+}
+ span{
+    position: relative;
+    z-index: 4;
+
+ }
 
     </style>
     <!--animation css and js-->
@@ -262,7 +309,7 @@
     </nav>
 
     <!--hom-->
-    <section id="hom" class="bg-cover hero-section  " style="background-image:url(background.jpg);">
+    <section id="hom" class="bg-cover hero-section  " style="background-image:url();">
         <div class="overlay"></div>
         <div class="container text-center ">
             <div class="row gx-5 gy-5 align-items-center">
@@ -278,16 +325,17 @@
                         everyone.
                     </p>
 
-                    <button type="button" class="btn btn-primary "> <i class="fa-solid fa-play"></i></i> GET STARTED
-                    </button>
-                    <button type="button" class="btn btn-primary "> <i class="fa-brands fa-1x fa-github-square"></i> GET
-                        STARTED </button>
+                   
+                    <a  class="btndes m-2"> <span> <i  class="fa-solid fa-play"></i> GetStarted</span></a>  
 
+                    <a  class="btndes m-2"> <span> <i  class=" fa-brands fa-1x fa-github-square"></i> GetResume</span></a>  
+
+                       
                 </div>
                 <div class="col-md-6  text-center">
 
 
-                    <img class="card-img" src="rachid3.png" style="">
+               <img class="card-img" src="rachid3.png" style="">
                 </div>
             </div>
         </div>
@@ -299,14 +347,9 @@
 
             <div class="row">
                 <div class="col-12">
-                    <h1 id="heroservies" class="text-dark" data-aos="zoom-in">Tech Stack<br />
+                    <h1 id="heroservies" class="text-dark" data-aos="zoom-in">Tech Stack<h1 />
                         <div class="devider "></div>
-                        <p class=" text-dark my-4">
-                            it the first linding page for me because it was the first object any thinged for<br />
-                            for me to lerarning html and css and angular and java and python devloping <br />
-                            than all what we need for devloping any thingor me to lerarning html<br />
-                            and css and angular and java and python than all what we ne
-                        </p>
+                      
 
                 </div>
             </div>
@@ -320,7 +363,7 @@
                         <div class="card-body servic-img ">
                             <img id="image-skills" src="folder/bootstrap.png">
                         </div>
-                        <h3 class="text-dark mt-1">bootstrap<br />
+                        <h3 class="text-dark mt-1">bootstrap<h3 />
                             <div class="devider "></div>
                     </div>
                 </div>
@@ -382,7 +425,7 @@
                     </div>
                 </div>
                 <!--angular-->
-                <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/angular.png" id="image-skills">
@@ -392,7 +435,7 @@
                     </div>
                 </div>
                 <!--spring -->
-                <div class="col-3 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="col-6 col-md-3  mb-3 cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/springboot.png" id="image-skills">
@@ -412,13 +455,10 @@
     <section id="sectionProject">
         <div class="container text-center   ">
             <div class="row ">
-                <div class="col-12">
-                    <h1 id="heroservies" class="  text-dark">Our Features</h1><br />
-                    <div class="devider "></div>
-                    <p class=" text-dark my-4">
-                        it the first linding page for me because it was the first object any thinged for<br />
-                        for me to lerarning html and css and angular and java and python devloping <br />
-                    </p>
+                <div class="col-12 m">
+                    <h1 id="" class="" style="color:white;">My Project</h1>
+
+                  
                 </div>
             </div>
         </div>
@@ -453,42 +493,54 @@
                 </button>
               </div>
               </div>
-          <div class="div col-md-7 p-2">
-            <div class="row ">
-                <div class="col-md-12  rounded ">
-                    <div class="card-body">
-                        <h5 class="text-bg-primary text-center text-bg-success p-2">Geolocalisaion of taxi </h5>
-                            <div class="deviderTitleProjet "></div>
-
-
-                        <p class="card-text text-dark fs-5 fw-semibold">
-                            This web application makes it possible to develop and improve the transport offer
-                            and facilitate access to the
-                       </div>
+          <div class=" col-md-7 p-2 ">
+            <div class="row gy-5 justify-content-end ">
+                <div class="col-12">
+                 <h2 class="fw-bold " style="color:white ;">Geocalisiation of taxi </h2>
+                 <p class="fw-semibold">This web application makes it possible to develop and improve the transport offer
+                     and facilitate access to the</p>
+                     <br/>
+                     <p class="fw-semibold"> <img src="folder/toolsicon.png" style="width:40px;height:auto"> Geocalisiation,jsdfbjsd,shjdfj,</p>
                 </div>
 
-                <div class="col-12  ">
-                    <div class="d-flex bd-highlight align-items-center">
-                      <p class="card-text text-dark fs-5 fw-semibold"><i class="fa-solid fa-code"></i>  GoogleMaps,Python,Django</p>
-                        <div class="ms-auto bd-highlight">
-                            <button type="button" class="btn btn-primary "> <i
-                                    class="fa-brands fa-1x fa-github-square"></i> Github</button>
-                            <a href="https://www.youtube.com/watch?v=HNgR3Z2GgLY&ab_channel=rachidbourigue"><button
-                                    type="button" class="btn btn-secondary"><i
-                                        class="fa-solid fa-circle-play"></i> Video</button></a>
-                                     </div>
-                    </div>
+                <div class="col-12">
+                    
+                    <a  class="btndes"> <span> <i  class=" fa-brands fa-1x fa-github-square"></i> GitHub</span></a>  
+                    <a  class="btndes"> <span>  <i class="fa-solid fa-circle-play"></i> Vedio</span></a>  
+
                 </div>
+                </div>
+             </div>
+        
+                  
+                
+                  <!--<button type="button" class="btn btn-primary ">
+                     <i class="fa-brands fa-1x fa-github-square"></i> Github</button>
+                     
+                        <button type="button" class="btn btn-primary ">
+                           Github</button>-->
+                       
+
+
+                
             </div>
        </div>
     </div>
 </div>
-        
+
+ <div class="container">
+<div class="row">
+
+
+</div>
+
+ </div>
     </section>
    <!--Contact-->
     <section id="register " class="bg-cover  " style="background-image:url(vasily-koloda-8CqDvPuo_kI-unsplash.jpg);">
         <div class="overlay"></div>
 
+       
         <div class="row">
 
             <div class="row text-center">
@@ -498,14 +550,14 @@
                         <p class=" text-white my-4">
                             it the first linding page for me because it was the first object any thinged for<br />
                             for me to lerarning html and css and angular and java and python devloping <br />
-
+        
                         </p>
-
+        
                 </div>
             </div>
-
-
-
+        
+        
+        
             <div class="col-md-8  mx-auto">
                 <form class="row gy-3 ">
                     <div class="form-group col-md-6">
@@ -528,9 +580,7 @@
                 </form>
             </div>
         </div>
-
-
-      
+        
         
 
 
@@ -548,4 +598,5 @@
     </script>
 </body>
 
-</html>
+</html> 
+
