@@ -27,6 +27,9 @@
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
         }
+        body{
+            background-color: #131f5e;
+        }
 
         #hero {
             font-family: 'Fredoka One', cursive;
@@ -201,6 +204,8 @@
         .cardSkills {
             position: relative;
             overflow: hidden;
+            background-color: #d9dde016;
+            backdrop-filter: blur(50px);
         }
 
         .cardSkills::before {
@@ -287,7 +292,18 @@
             background-color: red;
 
         }
+        .borderrow:hover .imageToolsicon{
+        transform: rotate(360deg);
+        transition: 0.5s;
       
+        
+
+
+        }
+        #SERVICES{
+         background-color: #131f5e;
+
+        }
 
     </style>
     <!--animation css and js-->
@@ -377,9 +393,9 @@
 
            <div class="row  align-items-center justify-content-between">
     <!-- bootstrap -->
-    <div class="col-6 col-md-2   cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="col-6 col-md-2 shadow  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
         <div class="servic ">
-            <div class="card-body servic-img ">
+            <div class="card-body  servic-img ">
                 <img id="image-skills" src="folder/bootstrap.png">
             </div>
             <h3 class="text-dark mt-1">bootstrap
@@ -401,7 +417,7 @@
         </div>
     </div>
     <!--firebase-->
-    <div class="col-6 col-md-2 cardSkills  rounded" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="col-6 col-md-2 cardSkills shadow rounded" data-aos="zoom-in" data-aos-duration="1500">
         <div class="servic ">
             <div class="card-body servic-img ">
                 <img src="folder/firebase.png" id="image-skills">
@@ -411,7 +427,7 @@
         </div>
     </div>
     <!--Flutter-->
-    <div class="col-6 col-md-2   cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+    <div class="col-6 col-md-2 shadow  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
         <div class="servic ">
             <div class="card-body servic-img ">
                 <img src="folder/flutter.png" id="image-skills">
@@ -425,13 +441,13 @@
     </div>
 
            </div>
-
+<br/><br/>
             <div class="row  align-items-center justify-content-between">
 
 
             
                 <!--mysql-->
-                <div class="col-6 col-md-2   cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500" >
+                <div class="col-6 col-md-2 mb-5 shadow cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500" >
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/mysql.png" id="image-skills">
@@ -441,7 +457,7 @@
                     </div>
                 </div>
                 <!--git-->
-                <div class="col-6 col-md-2  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="col-6 col-md-2 shadow cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/git.png" id="image-skills">
@@ -452,7 +468,7 @@
                     </div>
                 </div>
                 <!--angular-->
-                <div class="col-6 col-md-2  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="col-6 col-md-2 shadow cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/angular.png" id="image-skills">
@@ -462,7 +478,7 @@
                     </div>
                 </div>
                 <!--spring -->
-                <div class="col-6 col-md-2   cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="col-6 col-md-2 shadow  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/springboot.png" id="image-skills">
@@ -532,7 +548,7 @@
                                 transport offer
                                 and facilitate access to the</p>
                             <br />
-                            <p class="fw-semibold"> <img src="folder/toolsicon.png" style="width:40px;height:auto">
+                            <p class="fw-semibold"> <img class="imageToolsicon" src="folder/toolsicon.png" style="width:40px;height:auto">
                                 Geocalisiation,jsdfbjsd,shjdfj,</p>
                         </div>
 
@@ -556,10 +572,7 @@
         </div>
 
         <div class="container">
-            <div class="row">
-
-
-            </div>
+          
 
         </div>
     </section>
