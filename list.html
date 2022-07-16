@@ -43,6 +43,7 @@
 
         section {
             position: relative;
+            min-height: 100vh;
           
         }
 
@@ -122,7 +123,7 @@
         .btnabout {
             background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
             border-radius: 40px;
-            ;
+            
             font-size: 30px;
             border: none;
             text-align: center;
@@ -170,6 +171,7 @@
         }
 
         #sectionProject {
+            min-height: 100vh;
             background-color: var(--colorPremier);
 
         }
@@ -178,18 +180,34 @@
             background-color: rgb(92, 127, 193);
         }
 
-        .form-control::placeholder {
-            color: #fff;
+       .form1 input::placeholder {
+            color: rgb(250, 247, 247);
+
+
         }
 
-        .form-control:focus,
-        .form-control {
-            color: #fff;
-            border-color: rgba(255, 255, 255, 0.99);
-            outline: 0;
+        
+        .form1 input,.form1 textarea{
+            color: aqua;
+            outline:none;
             box-shadow: none;
+            border:2px solid aqua;
+       
         }
-
+        .form1 input:focus,.form textarea:focus{
+            color: aqua;
+            outline:none;
+            box-shadow: none;
+            border:none;
+       
+        }
+       .line{
+       height: 6px;
+       color: aqua;
+       background-color: aqua;
+       width: 29px;
+           }
+       
 
 
         .borderrow {
@@ -220,6 +238,7 @@
             transition: 0.5s;
         }
 
+        
         .cardSkills:hover::before {
             transform: translate(0px, -100%);
         }
@@ -288,10 +307,8 @@
 
         }
 
-        .sectionRegister {
-            background-color: red;
 
-        }
+      
         .borderrow:hover .imageToolsicon{
         transform: rotate(360deg);
         transition: 0.5s;
@@ -300,9 +317,41 @@
 
 
         }
-        #SERVICES{
-    
+        .form1{
+            
+             position: relative;
+             z-index: 2;
+             backdrop-filter: blur(10px);
 
+
+        }
+       /* .form::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(3, 255, 234);
+            transition: 0.5s;
+            z-index: -77;
+
+        }*/
+
+        .sectionRegister{
+           background-color: #131f5e;
+            position: relative;
+
+        }
+        .sectionRegister::before{
+            content: '';
+            position: absolute;
+            bottom: 10%;
+            left: 0%;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(3, 255, 234);
+            transition: 0.5s;
         }
 
     </style>
@@ -447,7 +496,7 @@
 
             
                 <!--mysql-->
-                <div class="col-6 col-md-2 mb-5 shadow cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500" >
+                <div class="col-6 col-md-2  shadow cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500" >
                     <div class="servic ">
                         <div class="card-body servic-img ">
                             <img src="folder/mysql.png" id="image-skills">
@@ -578,9 +627,9 @@
     </section>
 
     <!--Contact-->
-    <section id="sectionRegister ">
-        <div class="sectionRegister"></div>
-
+    <section class="sectionRegister">
+        
+        <div class="container ">
 
         <div class="row">
 
@@ -598,34 +647,27 @@
             </div>
 
 
-
-            <div class="col-md-8  mx-auto">
-                <form class="row gy-3 ">
-                    <div class="form-group col-md-6">
-                        <input type="text" placeholder="full name" class="form-control  "
-                            style="background: transparent;">
-                    </div>
-                    <div class=" col-md-6">
-                        <input type="text" placeholder="address mail" class="form-control "
-                            style="background: transparent;">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input type="text" placeholder="Telephone" class="form-control "
-                            style="background: transparent;">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <textarea class="form-control" placeholder="message" aria-placeholder="hhhhhhhh" cols="100"
-                            rows="5" style="background: transparent;"></textarea>
-                    </div>
-                    <div class="text-center"><button class="btnn">singin</button></div>
-                </form>
+                    <form class="row gy-5 form1 shadow rounded-4 ">
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="full name" class="form-control" style="background:transparent;">
+                        <span class="line"></span>
+                        </div>
+                        <div class=" col-md-6">
+                            <input type="text" placeholder="address mail" class="form-control" style="background: transparent;">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="text" placeholder="Telephone" class="form-control" style="background: transparent;">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" placeholder="message" aria-placeholder="hhhhhhhh" cols="100"  rows="5" style="background: transparent;"></textarea>
+                        </div>
+                        <div class="text-center"><button class="btnn">singin</button></div>
+                    </form>
+                </div>
             </div>
+            
         </div>
-
-
-
-
-    </section>
+ </section>
     <div class="p-lg-4 h-25 bg-primary"> copyrinting 2015-2020 by </div>
    
    <!--vanillaTitl animation-->
@@ -636,7 +678,7 @@
             speed: 400
         });
         
-        //It also supports NodeList
+   //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".cardProjet"));
     </script>
 
