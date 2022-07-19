@@ -30,6 +30,9 @@
         body{
             background-color: #131f5e;
         }
+        .navbar {
+            box-shadow: 1px 1px 30px rgba(32, 35, 36, 0.5);
+        }
 
         #hero {
             font-family: 'Fredoka One', cursive;
@@ -65,9 +68,8 @@
 
         }
 
-        .navbar {
-            box-shadow: 1px 1px 30px rgba(32, 35, 36, 0.5);
-        }
+        
+       
 
         p {
             font-weight: 300;
@@ -92,52 +94,9 @@
 
         }
 
-        .btn {
-            background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
-            border-radius: 40px;
+   
 
-            font-size: 30px;
-            border: none;
-            margin-top: 60px;
-            color: rgb(255, 255, 255);
-
-        }
-
-        .btnn {
-            background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
-            border-radius: 40px;
-            ;
-            font-size: 20px;
-            border: none;
-            padding: 10px;
-            margin-top: 2px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            transition: all 0.3s ease;
-            transform: translateY(-6px);
-        }
-
-        .btnabout {
-            background: linear-gradient(to left, var(--colorPremier), var(--colorSecondaire));
-            border-radius: 40px;
-            
-            font-size: 30px;
-            border: none;
-            text-align: center;
-
-            padding-top: 13px;
-            color: rgb(255, 255, 255);
-            width: 80px;
-            height: 80px;
-        }
-
-        .btnabout:hover {
-            transition: all 0.3s ease-in-out;
-            transform: scale(130%);
-        }
+    
 
         .devider {
             width: 100px;
@@ -160,15 +119,7 @@
             margin: 5px auto;
         }
 
-        .devider:hover {
-            transition: all 0.3s ease;
-            width: 170px;
-        }
-
-        .deviderTitleProjet:hover {
-            transition: all 0.3s ease;
-            width: 100%;
-        }
+      
 
         #sectionProject {
             min-height: 100vh;
@@ -180,37 +131,7 @@
             background-color: rgb(92, 127, 193);
         }
 
-       .form1 input::placeholder {
-            color: rgb(250, 247, 247);
-
-
-        }
-
-        
-        .form1 input,.form1 textarea{
-            color: aqua;
-            outline:none;
-            box-shadow: none;
-            border:2px solid aqua;
-       
-        }
-        .form1 input:focus,.form textarea:focus{
-            color: aqua;
-            outline:none;
-            box-shadow: none;
-            border:none;
-       
-        }
-       .line{
-       height: 6px;
-       color: aqua;
-       background-color: aqua;
-       width: 29px;
-           }
-       
-
-
-        .borderrow {
+       .borderrow {
             border: 4px solid var(--colorBtnProject);
         }
 
@@ -222,7 +143,6 @@
         .cardSkills {
             position: relative;
             overflow: hidden;
-        
             backdrop-filter: blur(50px);
         }
 
@@ -255,7 +175,6 @@
         }
 
         #imagecarousel2 {
-
             height: 300px;
             width: 100%;
             object-fit: cover;
@@ -278,8 +197,6 @@
             font-weight: 600;
             font-size: x-large;
             padding: 10px;
-
-
         }
 
         .btndes:hover {
@@ -312,48 +229,86 @@
         .borderrow:hover .imageToolsicon{
         transform: rotate(360deg);
         transition: 0.5s;
-        
-        
-
-
-        }
-        .form1{
-            
-             position: relative;
-             z-index: 2;
-             backdrop-filter: blur(10px);
-
-
-        }
-       /* .form::before{
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px;
-            height: 100px;
-            background-color: rgb(3, 255, 234);
-            transition: 0.5s;
-            z-index: -77;
-
-        }*/
+         }
+       
+         
+     
 
         .sectionRegister{
-           background-color: #131f5e;
-            position: relative;
+           background-color: #ffffff;
+           position: relative;
 
         }
-        .sectionRegister::before{
+        .back-form{
+            position: relative;
+         }
+         .back-form::after{
             content: '';
             position: absolute;
-            bottom: 10%;
-            left: 0%;
-            width: 300px;
-            height: 300px;
+            top:-30px;
+            left: -30px;
+            width: 70px;
+            height: 70px;
             background-color: rgb(3, 255, 234);
             transition: 0.5s;
-        }
+            border-radius:50%;
+              }
+              
+        .back-form::before{
+            content: '';
+            position: absolute;
+            bottom:-30px;
+            right: -30px;
+            width: 70px;
+            height: 70px;
+            background-color: rgb(3, 255, 234);
+            transition: 0.5s;
+            border-radius:50%;
+            }
 
+
+        .form1{
+            background-color: #242b7e0a;
+             position: relative;
+             z-index: 2;
+             backdrop-filter: blur(4px);
+          }
+        .form1 input::placeholder,#textarea::placeholder{
+            color: rgb(0, 0, 0);
+           }
+       .form1 input,#textarea{
+        font-weight: 600;
+            font-size: large;
+             color: aqua;
+            outline:none;
+            box-shadow: none;
+            border:none;
+        }
+     .form1 input:focus,#textarea:focus{
+            font-weight: 600;
+            font-size: large;
+            color: aqua;
+            outline:none;
+            box-shadow: none;
+            border:none;
+          
+        }
+       form div{
+         position: relative;
+
+        }     
+       .line{
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
+    height: 1px;
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+   
+       }
+
+
+     
     </style>
     <!--animation css and js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -392,7 +347,6 @@
             </div>
         </div>
     </nav>
-
     <!--hom-->
     <section id="hom" class="bg-cover hero-section  " style="">
         <div class="overlay"></div>
@@ -425,7 +379,6 @@
             </div>
         </div>
     </section>
-
     <!--services-->
     <section id="SERVICES">
         <div class="container text-center my-5  ">
@@ -541,7 +494,6 @@
         </div>
 
     </section>
-
     <!--Project -->
     <section id="sectionProject">
         <div class="container text-center   ">
@@ -625,7 +577,6 @@
 
         </div>
     </section>
-
     <!--Contact-->
     <section class="sectionRegister">
         
@@ -633,7 +584,7 @@
 
         <div class="row">
 
-            <div class="row text-center">
+                    <div class="row  text-center">
                 <div class="col-12">
                     <h1 id="heroservies" class="text-white" data-aos="zoom-in">Singin <br />
                         <div class="devider "></div>
@@ -644,30 +595,41 @@
                         </p>
 
                 </div>
-            </div>
+                     </div>
 
-
-                    <form class="row gy-5 form1 shadow rounded-4 ">
-                        <div class="form-group col-md-6">
+                     
+                 <div class="row back-form p-0" >
+                <div class="element"></div>
+                    <form class="row  gy-5 form1 shadow rounded-4 justify-content-around m-0">
+                        <div class="form-group col-md-5">
                             <input type="text" placeholder="full name" class="form-control" style="background:transparent;">
                         <span class="line"></span>
                         </div>
-                        <div class=" col-md-6">
+                        <div class=" col-md-5">
                             <input type="text" placeholder="address mail" class="form-control" style="background: transparent;">
+                            <span class="line"></span>
                         </div>
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-5">
                             <input type="text" placeholder="Telephone" class="form-control" style="background: transparent;">
+                            <span class="line"></span>
                         </div>
-                        <div class="form-group col-md-12">
-                            <textarea class="form-control" placeholder="message" aria-placeholder="hhhhhhhh" cols="100"  rows="5" style="background: transparent;"></textarea>
+                        <div class="form-group col-md-5">
+                            <input type="text" placeholder="Telephone" class="form-control" style="background: transparent;">
+                            <span class="line"></span>
                         </div>
-                        <div class="text-center"><button class="btnn">singin</button></div>
+                        <div class="form-group col-md-11">
+                            <textarea class="form-control" id="textarea" placeholder="message" aria-placeholder="hhhhhhhh" cols="100"  rows="5" style="background: transparent;"></textarea>
+                            <span class="line"></span>
+                        </div>
+                        <div class="text-center"><button class="btndes"><span>send</span>
+                        </button></div>
                     </form>
+                 </div>
                 </div>
             </div>
             
         </div>
- </section>
+          </section>
     <div class="p-lg-4 h-25 bg-primary"> copyrinting 2015-2020 by </div>
    
    <!--vanillaTitl animation-->
