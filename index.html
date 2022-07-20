@@ -17,10 +17,7 @@
             --colorPremier: #020202;
             --colorSecondaire: #ececec;
             --colorBtnProject: rgb(254, 242, 19);
-
-
-
-        }
+}
 
         * {
             box-sizing: border-box;
@@ -31,8 +28,13 @@
             background-color: #131f5e;
         }
         .navbar {
-            box-shadow: 1px 1px 30px rgba(32, 35, 36, 0.5);
+           box-shadow: 1px 1px 30px rgba(32, 35, 36, 0.5);
+           background-color:var(--colorPremier) ;
         }
+        .nav-link{
+            color: aliceblue!important;
+        }
+
 
         #hero {
             font-family: 'Fredoka One', cursive;
@@ -40,9 +42,7 @@
 
         }
 
-        .PRO {
-            background: linear-gradient(var(--colorPremier), var(--colorSecondaire));
-        }
+        
 
         section {
             position: relative;
@@ -50,12 +50,7 @@
           
         }
 
-        .bg-cover {
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+       
 
         .overlay {
             position: absolute;
@@ -67,9 +62,6 @@
             background: linear-gradient(var(--colorPremier), var(--colorPremier));
 
         }
-
-        
-       
 
         p {
             font-weight: 300;
@@ -122,10 +114,25 @@
       
 
         #sectionProject {
+            position:relative;
             min-height: 100vh;
             background-color: var(--colorPremier);
 
         }
+        #sectionProject::before{
+
+content: '';
+position: absolute;
+top:0px;
+right: 0px;
+width: 200px;
+height: 200px;
+background-image: linear-gradient(to left, rgb(255, 191, 0), var(--colorBtnProject));
+
+transition: 0.5s;
+border-radius:50%;
+
+}
 
         #sectionProject .div .div {
             background-color: rgb(92, 127, 193);
@@ -182,10 +189,11 @@
         }
 
         .cardProjet {
-            background-color: #15487546;
-            backdrop-filter: blur(50px);
+            
+            background-color: #1548752f;
+            backdrop-filter: blur(10px);
         }
-
+     
 
         .btndes {
             position: relative;
@@ -308,7 +316,13 @@
        }
 
 
-     
+       .navbar-brand{
+        color: #ececec!important;
+       }
+       .collapse{
+       
+        color: #ececec;
+       }
     </style>
     <!--animation css and js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -325,7 +339,7 @@
 
 
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light " data-aos="fade-down">
+    <nav class="navbar  navbar-expand-lg navbar-light "  data-aos="fade-down">
         <div class="container">
             <a class="navbar-brand" href="#">RBH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
