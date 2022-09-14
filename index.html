@@ -17,6 +17,9 @@
             --colorPremier: #020202;
             --colorSecondaire: #ececec;
             --colorBtnProject: rgb(254, 242, 19);
+            --colorPremierf: rgb(254, 242, 19);
+            --colorSecondairef: #020202;
+            --colorBtnProjectf: rgb(254, 242, 19);
 }
 
         * {
@@ -176,13 +179,19 @@ border-radius:50%;
 
 
         #image-skills {
-            width: 170px;
-            height: 170px;
+            width: 100px;
+            height: 100px;
             text-align: center;
         }
 
         #imagecarousel2 {
             height: 300px;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        #imagecarouselphone {
+            height: 600px;
             width: 100%;
             object-fit: cover;
             position: relative;
@@ -193,7 +202,16 @@ border-radius:50%;
             background-color: #1548752f;
             backdrop-filter: blur(10px);
         }
-     
+        .cardProjet2 {
+            
+            background-color: #1548752f;
+            backdrop-filter: blur(10px);
+        }
+        .cardProjet3 {
+            
+            background-color: #1548752f;
+            backdrop-filter: blur(10px);
+        }
 
         .btndes {
             position: relative;
@@ -243,7 +261,7 @@ border-radius:50%;
      
 
         .sectionRegister{
-           background-color: var(--colorSecondaire);
+           background-color: beige;
            position: relative;
 
         }
@@ -257,10 +275,21 @@ border-radius:50%;
             left: -30px;
             width: 70px;
             height: 70px;
-            background-color: var(--colorBtnProject);
+            background-color: var(--colorPremierf);
             transition: 0.5s;
             border-radius:50%;
               }
+              .desc{
+            position: relative;
+         }
+         .subdesc{
+          
+            position: absolute;
+            bottom:0px;
+            right: 0px;
+          
+         
+              }   
               
         .back-form::before{
             content: '';
@@ -269,25 +298,25 @@ border-radius:50%;
             right: -30px;
             width: 70px;
             height: 70px;
-            background-color: var(--colorBtnProject);
+            background-color: var(--colorPremierf);
             transition: 0.5s;
             border-radius:50%;
             }
 
 
         .form1{
-            background-color: #242b7e0a;
+            background-color: black;
              position: relative;
              z-index: 2;
              backdrop-filter: blur(4px);
           }
         .form1 input::placeholder,#textarea::placeholder{
-            color: rgb(0, 0, 0);
+            color: var(--colorPremierf);
            }
        .form1 input,#textarea{
         font-weight: 600;
             font-size: large;
-             color: var(--colorPremier);
+             color: var(--colorPremierf);
             outline:none;
             box-shadow: none;
             border:none;
@@ -295,7 +324,7 @@ border-radius:50%;
      .form1 input:focus,#textarea:focus{
             font-weight: 600;
             font-size: large;
-            color: var(--colorPremier);
+            color: var(--colorPremierf);
             outline:none;
             box-shadow: none;
             border:none;
@@ -311,7 +340,7 @@ border-radius:50%;
     left: 2%;
     height: 1px;
     width: 98%;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--colorPremierf);
    
        }
 
@@ -341,20 +370,18 @@ border-radius:50%;
     <!--navbar-->
     <nav class="navbar  navbar-expand-lg navbar-light "  data-aos="fade-down">
         <div class="container">
-            <a class="navbar-brand" href="#">RBH</a>
+            <a class="navbar-brand" href="#">RB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link active" aria-current="#hom" href="#">Home</a>
                     <a class="nav-link" href="#SERVICES">Skills</a>
-                    <a class="nav-link" href="#about">AbOUT</a>
-                    <a class="nav-link" href="#Features">SidePoject</a>
-                    <a class="nav-link" href="#REVIEWS">Review</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#sectionProject">Poject</a>
+
+                    <a class="nav-link" href="#sectionregister">Contact</a>
 
 
                 </div>
@@ -362,27 +389,35 @@ border-radius:50%;
         </div>
     </nav>
     <!--hom-->
-    <section id="hom" class="bg-cover hero-section  " style="">
+    <section id="home" class="bg-cover hero-section  " style="">
         <div class="overlay"></div>
         <div class="container text-center ">
             <div class="row gx-5 gy-5 align-items-center">
                 <div class="col-md-6 ">
-                    <h1 id="hero" class="display-4" data-aos="zoom-in-left">I'm Bourigue Rachid</h1>
-                    <p class="my-3 ">
-                        Software engineer and Master's degree student specialised in Compture Systems Engineering, and
-                        lover of the open-source movement philosophy.
-                        I am always doing that which I cannot do in order that I may learn how to do it, and I believe
-                        in sharing knowledge.
-                        I think it's essential a </br>
-                        +ways to keep professional and surround yourself with good people, work hard, and be nice to
-                        everyone.
-                    </p>
+               <div class="row">
+                 
+                <h1 id="hero" class="display-4" data-aos="zoom-in-left">I'm Bourigue Rachid</h1>
+                <p class="my-3 ">
+                    Software engineer and Master's degree student specialised in Compture Systems Engineering, and
+                    lover of the open-source movement philosophy.
+                    I am always doing that which I cannot do in order that I may learn how to do it, and I believe
+                    in sharing knowledge.
+                    I think it's essential a </br>
+                    +ways to keep professional and surround yourself with good people, work hard, and be nice to
+                    everyone.
+                </p>
 
 
-                    <a class="btndes m-2"> <span> <i class="fa-solid fa-play"></i> GetStarted</span></a>
+               </div>
+               <div class="row text-center">
 
-                    <a class="btndes m-2"> <span> <i class=" fa-brands fa-1x fa-github-square"></i> GetResume</span></a>
 
+
+                <a class="btndes m-2" href="https://github.com/bourigue"> <span> <i class="fa-solid fa-play"></i> GetStarted</span></a>
+
+                <a class="btndes m-2" href="https://drive.google.com/file/d/1PvgWvdSR4zV0SoDrCWFGaT9f24dn4Pgy/view?usp=sharing"> <span> <i class=" fa-brands fa-1x fa-github-square"></i> GetResume</span></a>
+
+               </div>
 
                 </div>
                 <div class="col-md-6  text-center">
@@ -411,7 +446,7 @@ border-radius:50%;
     <!-- bootstrap -->
     <div class="col-6 col-md-2 shadow  cardSkills rounded" data-aos="zoom-in" data-aos-duration="1500">
         <div class="servic ">
-            <div class="card-body  servic-img ">
+            <div class="card-body bg- servic-img ">
                 <img id="image-skills" src="assets/bootstrap.png">
             </div>
             <h3 class="text-dark mt-1">bootstrap
@@ -519,8 +554,8 @@ border-radius:50%;
                 </div>
             </div>
         </div>
-
-        <div class="container cardProjet  ">
+<!-- Project 1   -->
+        <div class="container cardProjet pb-4">
             <div class="row    borderrow justify-content-center">
                 <div class="col-md-5 p-0 m-0">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -531,47 +566,61 @@ border-radius:50%;
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img id="imagecarousel2" src="folder/project.jpg" class="d-block w-100" alt="...">
+                                <img id="imagecarousel2" src="assets/imgProject/p1s1.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img id="imagecarousel2" src="folder/project.jpg" class="d-block w-100" alt="...">
+                                <img id="imagecarousel2" src="assets/imgProject/p1s6.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img id="imagecarousel2" src="folder/bootstrap.png" class="d-block w-100" alt="...">
+                                <img id="imagecarousel2" src="assets/imgProject/p1s7.png" class="d-block w-100" alt="...">
                             </div>
+                        
+                            <div class="carousel-item">
+                                <img id="imagecarousel2" src="assets/imgProject/p1s5.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="imagecarousel2" src="assets/imgProject/p1s3.png" class="d-block w-100" alt="...">
+                            </div>
+                            
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-prev-icon text-bg-warning" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon text-bg-warning" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
-                <div class=" col-md-7 p-2 ">
+                <div class=" col-md-7   ">
                     <div class="row gy-5 justify-content-end ">
                         <div class="col-12">
                             <h2 class="fw-bold " style="color:white ;">Geocalisiation of taxi </h2>
-                            <p class="fw-semibold">This web application makes it possible to develop and improve the
-                                transport offer
-                                and facilitate access to the</p>
-                            <br />
+                            <p class="fw-semibold">This web application makes it possible to develop and improve the transport offer and facilitates access to the means of urban transport in a city having a
+                                 communication interface between passengers and taxi drivers</p>
+                           
                             <p class="fw-semibold"> <img class="imageToolsicon" src="folder/toolsicon.png" style="width:40px;height:auto">
-                                Geocalisiation,jsdfbjsd,shjdfj,</p>
+                                Pyhton,Django,GoogleMaps</p>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12 ">
 
-                            <a class="btndes"> <span> <i class=" fa-brands fa-1x fa-github-square"></i>
+                            
+
+                            <a class="btndes " href="https://github.com/bourigue/GeolocationofTaxis"> <span> <i class=" fa-brands fa-1x fa-github-square"></i>
                                     GitHub</span></a>
-                            <a class="btndes"> <span> <i class="fa-solid fa-circle-play"></i> Vedio</span></a>
+                            <a class="btndes " href="https://www.youtube.com/watch?v=JDS2Xbl2c54&t=20s&ab_channel=rachidbourigue"> <span> <i class="fa-solid fa-circle-play"></i> Vedio</span></a>
 
                         </div>
                     </div>
@@ -582,17 +631,208 @@ border-radius:50%;
 
 
             </div>
+     
         </div>
+
+<!-- Project 2   -->
+        <div class="container cardProjet2 pb-4">
+            <div class="row    borderrow justify-content-center">
+                <div class="col-md-5 p-0 m-0">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="imagecarousel2" src="assets/imgProject/p2s1.png" class="d-block w-100" alt="...">
+                            </div>
+                           
+                        
+                        
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class=" col-md-7 p-2 ">
+                    <div class="row gy-5 justify-content-end ">
+                        <div class="col-12">
+                            <h2 class="fw-bold " style="color:white ;">DownloadManager </h2>
+                            <p class="fw-semibold">The computer application enables you to download videos or audio from YouTube of various available quality and enables you to choose a storage location on your computer</p>
+                            <br />
+                            <p class="fw-semibold"> <img class="imageToolsicon" src="folder/toolsicon.png" style="width:40px;height:auto">
+                                Pyhton,Pytube,PyQt5</p>
+                        </div>
+
+                        <div class="col-12">
+
+                            <a class="btndes m-1" href="https://github.com/bourigue/DownloadManager"> <span> <i class=" fa-brands fa-1x fa-github-square"></i>
+                                    GitHub</span></a>
+                            <a class="btndes m-1" href=""> <span> <i class="fa-solid fa-circle-play"></i> Vedio</span></a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+     
+        </div>
+
+
+        <div class="container  pb-4">
+            <div class="row     justify-content-center">
+                <div class="col-md-6 m-1 borderrow">
+                   <div     class="row     justify-content-center">
+                <div class=" col-md-5 p-0 m-0">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                                class="active text-bg-warning" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button text-bg-warning" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button text-bg-warning" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="imagecarouselphone" src="assets/imgProject/p3s1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="imagecarouselphone" src="assets/imgProject/p3s3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="imagecarouselphone" src="assets/imgProject/p3s9.png" class="d-block w-100" alt="...">
+                            </div>
+                           
+                        
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-bg-warning" aria-hidden="true"></span>
+                            <span class="visually-hidden ">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon text-bg-warning" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="  col-md-7 p-2 ">
+                    <div class="row gy-5 justify-content-end ">
+                        <div class="col-12">
+                            <h2 class="fw-bold " style="color:white ;">Roomie </h2>
+                            <p class="fw-semibold">Roomie application makes finding roommates and rooms to share easy. It will manage offers and requests for co-rentals</p>
+                            <br />
+                            <p class="fw-semibold"> <img class="imageToolsicon" src="assets/toolsicon.png" style="width:40px;height:auto">
+                                Flutter,Googlemap api,Firebase</p>
+                        </div>
+
+                        <div class="col-12">
+
+                            <a class="btndes m-1" href="https://github.com/bourigue/GeolocationofTaxis"> <span> <i class=" fa-brands fa-1x fa-github-square"></i>
+                                    GitHub</span></a>
+                            <a class="btndes m-1" href="https://www.youtube.com/watch?v=JDS2Xbl2c54&t=20s&ab_channel=rachidbourigue"> <span> <i class="fa-solid fa-circle-play"></i> Vedio</span></a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                     </div>  
+                </div>
+                <div class=" col-md-6 m-1 borderrow">
+                    <div class="row     justify-content-center">
+                        <div class="  col-md-5 p-0 m-0">
+                            <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                    <button type="button " data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                                        class="active text-bg-warning" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button text-bg-warning" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button text-bg-warning" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img id="imagecarouselphone" src="folder/imgProject/p4s2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img id="imagecarouselphone" src="folder/imgProject/p4s1.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img id="imagecarouselphone" src="folder/imgProject/p4s3.png" class="d-block w-100" alt="...">
+                                    </div>
+                                   
+                                
+                                    
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon text-bg-warning" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon text-bg-warning" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class=" col-md-7 p-2 ">
+                            <div class="row gy-xxl-5 justify-content-between ">
+                                <div class="col-12 ">
+                                    <h2 class="fw-bold " style="color:white ;">Roomie </h2>
+                                    <p class="fw-semibold">To manage these communities, we have a good set of applications that can do it, like WhatsApp, Facebook, etc. But the problem remains the separation between the management part of communities and the sharing of information between these communities. So when 
+                                        the community grows, it will be difficult to manage all this information<br />
+                                    <p class="fw-semibold"> <img class="imageToolsicon" src="folder/toolsicon.png" style="width:40px;height:auto">
+                                        Flutter,Googlemap api,Firebase</p>
+                                </div>
+        
+                                <div class="col-12 ">
+        
+                                    <a class="btndes m-1" href="https://github.com/bourigue/GeolocationofTaxis"> <span> <i class=" fa-brands fa-1x fa-github-square"></i>
+                                            GitHub</span></a>
+                                    <a class="btndes m-1" href="https://www.youtube.com/watch?v=JDS2Xbl2c54&t=20s&ab_channel=rachidbourigue"> <span> <i class="fa-solid fa-circle-play"></i> Vedio</span></a>
+        
+                                </div>
+                            </div>
+                        </div>
+        
+        
+        
+        
+        
+                      </div>  
+               </div>
+
+
+
+
+            </div>
+     
+        </div>
+
         </div>
         </div>
 
-        <div class="container">
-          
-
-        </div>
+        
     </section>
     <!--Contact-->
-    <section class="sectionRegister">
+    <section class="sectionRegister" id="sectionregister">
         
         <div class="container ">
 
@@ -600,13 +840,9 @@ border-radius:50%;
 
                     <div class="row  text-center">
                 <div class="col-12">
-                    <h1 id="heroservies" class="text-white" data-aos="zoom-in">Singin <br />
+                    <h1 id="heroservies" class="text-dark" data-aos="zoom-in">Singin <br />
                         <div class="devider "></div>
-                        <p class=" text-white my-4">
-                            it the first linding page for me because it was the first object any thinged for<br />
-                            for me to lerarning html and css and angular and java and python devloping <br />
-
-                        </p>
+                       
 
                 </div>
                      </div>
@@ -644,7 +880,7 @@ border-radius:50%;
             
         </div>
           </section>
-    <div class="p-lg-4 h-25 bg-black text-warning"> copyrinting 2015-2020 by </div>
+    <div class="p-lg-4 h-25 bg-black text-warning"> copyrinting 2022-2023 by rachid bourigue </div>
    
    <!--vanillaTitl animation-->
     <script type="text/javascript" src="vanilla-tilt.js"></script>
@@ -653,9 +889,16 @@ border-radius:50%;
             max: 25,
             speed: 400
         });
-        
+
    //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".cardProjet"));
+        VanillaTilt.init(document.querySelector(".cardProjet2"), {
+            max: 25,
+            speed: 400
+        });
+
+   //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".cardProjet2"));
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
